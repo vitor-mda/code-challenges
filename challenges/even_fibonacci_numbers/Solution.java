@@ -1,4 +1,4 @@
-package even_fibonacci_numbers;
+package challenges.even_fibonacci_numbers;
 
 public class Solution {
     public static void main(String[] args) {
