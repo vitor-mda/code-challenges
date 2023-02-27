@@ -5,3 +5,6 @@ AllCops:
   NewCops: enable
   Exclude:
     - bin/**/*
+
+Style/Documentation:
+  Enabled: false
