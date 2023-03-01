@@ -4,7 +4,7 @@ require 'spec_helper'
 require 'multiples_of3_or5/multiples_of3_or5'
 
 RSpec.describe MultiplesOf3Or5 do
-  describe '.sum_of_multiples_below' do
+  describe '::sum_of_multiples_below' do
     subject { described_class.sum_of_multiples_below(ceiling) }
 
     context 'when ceiling is 10' do
