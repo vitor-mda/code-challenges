@@ -3,7 +3,7 @@
 class MultiplesOf3Or5
   class << self
     def sum_of_multiples_below(ceiling)
-      multiples_below(ceiling).reduce(&:+)
+      multiples_below(ceiling).sum
     end
 
     private
