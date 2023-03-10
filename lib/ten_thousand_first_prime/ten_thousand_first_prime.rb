@@ -5,7 +5,7 @@ require 'prime'
 class TenThousandFirstPrime
   class << self
     def fetch(nth_prime:)
-      Prime.lazy.drop(nth_prime - 1).first
+      Prime.take(nth_prime).last
     end
   end
 end
