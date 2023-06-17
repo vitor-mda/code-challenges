@@ -5,3 +5,8 @@ source 'https://rubygems.org'
 ruby '3.2.1'
 
 gem 'rspec', group: %i[development test]
+
+group :lint do
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
+end
