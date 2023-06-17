@@ -8,13 +8,13 @@ RSpec.describe LargestPalindromeProduct do
     subject { described_class.from_two_numbers_with(digits:) }
 
     context 'when 2 digits' do
-      let(:digits) { 2 }
+      def digits = 2
 
       it { is_expected.to eq 9009 }
     end
 
     context 'when 3 digits' do
-      let(:digits) { 3 }
+      def digits = 3
 
       it { is_expected.to eq 906_609 }
     end

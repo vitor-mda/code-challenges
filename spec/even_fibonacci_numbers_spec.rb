@@ -8,13 +8,13 @@ RSpec.describe EvenFibonacciNumbers do
     subject { described_class.sum_even_terms_below(ceiling) }
 
     context 'when ceiling is 50' do
-      let(:ceiling) { 50 }
+      def ceiling = 50
 
       it { is_expected.to eq 44 }
     end
 
     context 'when ceiling is 4_000_000' do
-      let(:ceiling) { 4_000_000 }
+      def ceiling = 4_000_000
 
       it { is_expected.to eq 4_613_732 }
     end

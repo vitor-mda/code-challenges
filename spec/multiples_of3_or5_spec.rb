@@ -8,13 +8,13 @@ RSpec.describe MultiplesOf3Or5 do
     subject { described_class.sum_of_multiples_below(ceiling) }
 
     context 'when ceiling is 10' do
-      let(:ceiling) { 10 }
+      def ceiling = 10
 
       it { is_expected.to eq 23 }
     end
 
     context 'when ceiling is 1000' do
-      let(:ceiling) { 1000 }
+      def ceiling = 1000
 
       it { is_expected.to eq 233_168 }
     end
