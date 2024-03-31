@@ -4,5 +4,8 @@ require:
 AllCops:
   NewCops: enable
 
+Metrics/MethodLength:
+  CountAsOne: ['array', 'hash', 'heredoc']
+
 Style/Documentation:
   Enabled: false
