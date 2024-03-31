@@ -14,3 +14,4 @@ Solutions for Project Euler's challenges. Written in <img src="https://raw.githu
 8. [Largest Product in a Series](lib/largest_product_in_a_series/)
 9. [Special Pythagorean Triplet](lib/special_pythagorean_triplet/)
 10. [Summation of Primes](lib/summation_of_primes/)
+11. [Largest Product in a Grid](lib/largest_product_in_a_grid/)
