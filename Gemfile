@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 
 ruby '3.2.1'
 
-gem 'rspec', group: %i[development test]
 gem 'guard-rspec', group: :development, require: false
+gem 'rspec', group: %i[development test]
 
 group :lint do
   gem 'rubocop', require: false
