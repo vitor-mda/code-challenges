@@ -7,7 +7,7 @@ RSpec.describe LargestProductInAGrid do
   describe '::find' do
     subject { described_class.find(grid) }
 
-    context 'with a 4x4 grid having the diagonal sequence (26, 63, 78, 14) as the greatest product resultant one' do
+    context 'with a 4x4 grid having the descending sequence (26, 63, 78, 14) as the greatest product resultant one' do
       def grid
         [
           [26, 10, 10, 10],
@@ -20,7 +20,7 @@ RSpec.describe LargestProductInAGrid do
       it { is_expected.to eq 1_788_696 }
     end
 
-    context 'with a 5x5 grid having the horizontal sequence (99, 99, 99, 99) as the greatest product resultant one' do
+    context 'with a 5x5 grid having the rightward sequence (99, 99, 99, 99) as the greatest product resultant one' do
       def grid
         [
           [50, 10, 10, 10, 10],
@@ -34,7 +34,7 @@ RSpec.describe LargestProductInAGrid do
       it { is_expected.to eq 96_059_601 }
     end
 
-    context 'with a 6x6 grid having the vertical sequence (99, 99, 99, 99) as the greatest product resultant one' do
+    context 'with a 6x6 grid having the downward sequence (99, 99, 99, 99) as the greatest product resultant one' do
       def grid
         [
           [10, 10, 10, 10, 10, 10],
@@ -49,7 +49,7 @@ RSpec.describe LargestProductInAGrid do
       it { is_expected.to eq 96_059_601 }
     end
 
-    context 'with a 10x10 grid having the diagonal sequence (14, 78, 63, 26) as the greatest product resultant one' do
+    context 'with a 10x10 grid having the ascending sequence (14, 78, 63, 26) as the greatest product resultant one' do
       def grid
         [
           [10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
@@ -68,7 +68,7 @@ RSpec.describe LargestProductInAGrid do
       it { is_expected.to eq 1_788_696 }
     end
 
-    context 'with a 20x20 grid having the diagonal sequence (87, 97, 94, 89) as the greatest product resultant one' do
+    context 'with a 20x20 grid having the ascending sequence (87, 97, 94, 89) as the greatest product resultant one' do
       def grid
         # rubocop:disable Layout
         [
