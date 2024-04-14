@@ -3,25 +3,29 @@
 class HighlyDivisibleTriangularNumber
   def self.first_with_over(divisors:) = new(divisors).find
 
-  def initialize(divisors) = @divisors = divisors
+  def initialize(divisors_count)
+    @divisors_count = divisors_count
+    @triangular_number_position = 1
+    @triangular_number = 1
+  end
 
-  def find = first_triangular_number_with_over_n_divisors
+  def find = first_triangular_number_over_the_divisors_count
 
   private
 
-  def first_triangular_number_with_over_n_divisors
-    nth_triangular_number = 1
-    last_triangular_number = 1
+  def first_triangular_number_over_the_divisors_count
     loop do
-      return last_triangular_number if over_n_divisors?(last_triangular_number)
+      return @triangular_number if over_divisors_count?
 
-      last_triangular_number += (nth_triangular_number += 1)
+      next_triangular_number
     end
   end
 
-  def over_n_divisors?(number) = divisors_count_for(number) > @divisors
+  def over_divisors_count? = divisors_count_for_current_number > @divisors_count
 
-  def divisors_count_for(number) = Divisors.for(number:).count
+  def divisors_count_for_current_number = Divisors.for(number: @triangular_number).count
+
+  def next_triangular_number = @triangular_number += (@triangular_number_position += 1)
 
   class Divisors
     def self.for(number:) = new(number)
