@@ -22,7 +22,9 @@ class HighlyDivisibleTriangularNumber
   def over_n_divisors?(number) = divisors_count_for(number) > @divisors
 
   def divisors_count_for(number)
-    count = (number == 1 ? 1 : 2)
+    return 1 if number == 1
+
+    count = 2
 
     divisor_candidate = 2
     max_divisor_candidate = number.ceildiv(2)
