@@ -21,18 +21,36 @@ class HighlyDivisibleTriangularNumber
 
   def over_n_divisors?(number) = divisors_count_for(number) > @divisors
 
-  def divisors_count_for(number)
-    return 1 if number == 1
+  def divisors_count_for(number) = Divisors.for(number:).count
 
-    count = 2
+  class Divisors
+    def self.for(number:) = new(number)
 
-    divisor_candidate = 2
-    max_divisor_candidate = number.ceildiv(2)
-    while divisor_candidate <= max_divisor_candidate
-      count += 1 if (number % divisor_candidate).zero?
-      divisor_candidate += 1
+    def initialize(number)
+      @dividend = number
+      @divisor_candidate = 2
+      @count_by_divisor = Hash.new(1)
     end
 
-    count
+    def count
+      return 1 if @dividend == 1
+
+      divisors_count
+    end
+
+    private
+
+    def divisors_count
+      until @dividend == 1
+        next @divisor_candidate += 1 unless (@dividend % @divisor_candidate).zero?
+
+        @dividend /= @divisor_candidate
+        @count_by_divisor[@divisor_candidate] += 1
+        @divisor_candidate = 2
+      end
+
+      @count_by_divisor.values.reduce(&:*)
+    end
   end
+  private_constant :Divisors
 end

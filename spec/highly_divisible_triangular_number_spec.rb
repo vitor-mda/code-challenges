@@ -40,10 +40,7 @@ RSpec.describe HighlyDivisibleTriangularNumber do
     context 'with over 500 divisors' do
       def divisors = 500
 
-      it do
-        skip "until performance improves so it doesn't take forever"
-        expect(triangular_number).to eq 76_576_500
-      end
+      it { is_expected.to eq 76_576_500 }
     end
   end
 end
