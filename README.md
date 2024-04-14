@@ -17,3 +17,4 @@ Solutions for Project Euler's challenges. Written in <img src="https://raw.githu
 11. [Largest Product in a Grid](lib/largest_product_in_a_grid/)
 12. [Highly Divisible Triangular Number](lib/highly_divisible_triangular_number/)
 13. [Large Sum](lib/large_sum/)
+14. [Longest Collatz Sequence](lib/longest_collatz_sequence/)
