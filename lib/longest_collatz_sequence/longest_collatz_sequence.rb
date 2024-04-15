@@ -33,20 +33,14 @@ class LongestCollatzSequence
     last_number = number
 
     loop do
-      break size += memoized(last_number) if memoized?(last_number)
+      break size += @chain_size_by_number[last_number] if @chain_size_by_number.key?(last_number)
 
       size += 1
-      last_number = next_for(last_number)
+      last_number = last_number.even? ? last_number / 2 : (3 * last_number) + 1
     end
 
-    memoize(number, with: size)
-    size
+    @chain_size_by_number[number] = size
   end
-
-  def memoized?(number)      = @chain_size_by_number.key?(number)
-  def memoized(number)       = @chain_size_by_number[number]
-  def memoize(number, with:) = @chain_size_by_number[number] = with
-  def next_for(number)       = number.even? ? number / 2 : (3 * number) + 1
 
   def update(longest_chain_producer:, longest_chain_size:)
     @longest_chain_producer = longest_chain_producer
