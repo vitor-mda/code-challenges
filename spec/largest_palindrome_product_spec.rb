@@ -4,7 +4,7 @@ require 'spec_helper'
 require 'largest_palindrome_product/largest_palindrome_product'
 
 RSpec.describe LargestPalindromeProduct do
-  describe '::from_two_numbers_with' do
+  describe '.from_two_numbers_with' do
     subject { described_class.from_two_numbers_with(digits:) }
 
     context 'when 2 digits' do

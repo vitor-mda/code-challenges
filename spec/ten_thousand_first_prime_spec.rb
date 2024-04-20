@@ -4,7 +4,7 @@ require 'spec_helper'
 require 'ten_thousand_first_prime/ten_thousand_first_prime'
 
 RSpec.describe TenThousandFirstPrime do
-  describe '::fetch' do
+  describe '.fetch' do
     subject { described_class.fetch(nth_prime:) }
 
     context 'when fetching the 6th prime' do

@@ -4,7 +4,7 @@ require 'spec_helper'
 require 'special_pythagorean_triplet/special_pythagorean_triplet'
 
 RSpec.describe SpecialPythagoreanTriplet do
-  describe '::product_of_a_triplet_which_the_sum_equals' do
+  describe '.product_of_a_triplet_which_the_sum_equals' do
     subject { described_class.product_of_a_triplet_which_the_sum_equals(sum) }
 
     context 'when sum equals 12' do

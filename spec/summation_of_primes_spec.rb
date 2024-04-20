@@ -4,7 +4,7 @@ require 'spec_helper'
 require 'summation_of_primes/summation_of_primes'
 
 RSpec.describe SummationOfPrimes do
-  describe '::sum_of_all_primes_below' do
+  describe '.sum_of_all_primes_below' do
     subject { described_class.sum_of_all_primes_below(upper_bound) }
 
     context 'when upper bound is ten' do

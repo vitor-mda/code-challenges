@@ -4,7 +4,7 @@ require 'spec_helper'
 require 'largest_product_in_a_grid/largest_product_in_a_grid'
 
 RSpec.describe LargestProductInAGrid do
-  describe '::find' do
+  describe '.find' do
     subject { described_class.find(grid) }
 
     context 'with a 4x4 grid having the descending sequence (26, 63, 78, 14) as the greatest product resultant one' do

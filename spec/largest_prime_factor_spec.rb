@@ -4,7 +4,7 @@ require 'spec_helper'
 require 'largest_prime_factor/largest_prime_factor'
 
 RSpec.describe LargestPrimeFactor do
-  describe '::of' do
+  describe '.of' do
     subject { described_class.of(number) }
 
     context 'when number is 13195' do

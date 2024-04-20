@@ -4,7 +4,7 @@ require 'spec_helper'
 require 'smallest_multiple/smallest_multiple'
 
 RSpec.describe SmallestMultiple do
-  describe '::divisible_by_each_number' do
+  describe '.divisible_by_each_number' do
     subject { described_class.divisible_by_each_number(from:, to:) }
 
     context 'when from 1 to 10' do
