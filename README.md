@@ -1,6 +1,6 @@
 # 👨🏻‍💻 Project Euler Challenges
 
-Solutions for [Project Euler](https://projecteuler.net/)'s challenges. Written in <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" height="20"> Ruby, driven by tests using <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rspec/rspec-original.svg" height="20"> RSpec.
+Solutions for [Project Euler](https://projecteuler.net/)'s problems. Written in <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" height="20"> Ruby, driven by tests using <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rspec/rspec-original.svg" height="20"> RSpec.
 
 ## 📑 Challenge Index
 
