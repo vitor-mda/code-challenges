@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'special_pythagorean_triplet/special_pythagorean_triplet'
 
 RSpec.describe SpecialPythagoreanTriplet do

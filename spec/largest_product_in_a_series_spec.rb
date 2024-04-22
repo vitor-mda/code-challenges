@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'largest_product_in_a_series/largest_product_in_a_series'
 
 RSpec.describe LargestProductInASeries do

@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'even_fibonacci_numbers/even_fibonacci_numbers'
 
 RSpec.describe EvenFibonacciNumbers do

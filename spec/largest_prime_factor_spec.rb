@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'largest_prime_factor/largest_prime_factor'
 
 RSpec.describe LargestPrimeFactor do

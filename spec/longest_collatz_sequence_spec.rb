@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'longest_collatz_sequence/longest_collatz_sequence'
 
 RSpec.describe LongestCollatzSequence do

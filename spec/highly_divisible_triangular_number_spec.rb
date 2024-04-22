@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'highly_divisible_triangular_number/highly_divisible_triangular_number'
 
 RSpec.describe HighlyDivisibleTriangularNumber do

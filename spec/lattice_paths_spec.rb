@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'lattice_paths/lattice_paths'
 
 RSpec.describe LatticePaths do

@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'sum_square_difference/sum_square_difference'
 
 RSpec.describe SumSquareDifference do

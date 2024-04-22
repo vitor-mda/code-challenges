@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'multiples_of3_or5/multiples_of3_or5'
 
 RSpec.describe MultiplesOf3Or5 do

@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'largest_palindrome_product/largest_palindrome_product'
 
 RSpec.describe LargestPalindromeProduct do

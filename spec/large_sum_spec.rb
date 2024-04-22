@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'large_sum/large_sum'
 
 RSpec.describe LargeSum do

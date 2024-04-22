@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'smallest_multiple/smallest_multiple'
 
 RSpec.describe SmallestMultiple do

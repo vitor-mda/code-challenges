@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'ten_thousand_first_prime/ten_thousand_first_prime'
 
 RSpec.describe TenThousandFirstPrime do

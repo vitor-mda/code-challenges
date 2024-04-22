@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'power_digit_sum/power_digit_sum'
 
 RSpec.describe PowerDigitSum do

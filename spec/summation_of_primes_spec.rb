@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'summation_of_primes/summation_of_primes'
 
 RSpec.describe SummationOfPrimes do
