@@ -20,3 +20,4 @@ Solutions for [Project Euler](https://projecteuler.net/)'s problems. Written in 
 14. [Longest Collatz Sequence](lib/longest_collatz_sequence/)
 15. [Lattice Paths](lib/lattice_paths/)
 16. [Power Digit Sum](lib/power_digit_sum/)
+20. [Factorial Digit Sum](lib/factorial_digit_sum/)
