@@ -11,6 +11,8 @@ By starting at the top of the triangle below and moving to adjacent numbers on t
 
 That is, $3 + 7 + 4 + 9 = 23$.
 
+## Problem I
+
 Find the maximum total from top to bottom of the triangle below:
 
 <div align="center">
@@ -30,3 +32,7 @@ Find the maximum total from top to bottom of the triangle below:
 63 66 04 68 89 53 67 30 73 16 69 87 40 31</br>
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23</br>
 </div>
+
+## Problem II
+
+Find the maximum total from top to bottom in [triangle.txt](https://projecteuler.net/resources/documents/0067_triangle.txt), a 15K text file containing a triangle with one-hundred rows.
