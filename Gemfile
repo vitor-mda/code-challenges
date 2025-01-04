@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '3.3.0'
+ruby '3.4.1'
 
 gem 'guard-rspec', group: :development, require: false
 gem 'rspec', group: %i[development test]
