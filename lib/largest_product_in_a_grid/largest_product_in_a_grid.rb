@@ -35,7 +35,7 @@ class LargestProductInAGrid
       columns_in_rightward_sequence_for(start_column_index)
         .map { |column_index| @grid[row_index][column_index] }
         .reduce(&:*)
-        .tap { if_largest_product_update_with(_1) }
+        .tap { if_largest_product_update_with(it) }
     end
   end
 
@@ -60,7 +60,7 @@ class LargestProductInAGrid
       rows_in_downward_sequence_for(start_row_index)
         .map { |row_index| @grid[row_index][column_index] }
         .reduce(&:*)
-        .tap { if_largest_product_update_with(_1) }
+        .tap { if_largest_product_update_with(it) }
     end
   end
 
@@ -73,7 +73,7 @@ class LargestProductInAGrid
       sequence_offsets
         .map { |offset| @grid[row_index + offset][column_index + offset] }
         .reduce(&:*)
-        .tap { if_largest_product_update_with(_1) }
+        .tap { if_largest_product_update_with(it) }
     end
   end
 
@@ -86,7 +86,7 @@ class LargestProductInAGrid
       sequence_offsets
         .map { |offset| @grid[row_index - offset][column_index + offset] }
         .reduce(&:*)
-        .tap { if_largest_product_update_with(_1) }
+        .tap { if_largest_product_update_with(it) }
     end
   end
 end

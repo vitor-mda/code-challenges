@@ -8,7 +8,7 @@ class LargestPalindromeProduct
   def execute
     numbers_sequence.filter_map do |n1|
       n1.downto(@lower_bound).filter_map do |n2|
-        (n1 * n2).then { |result| result if palindrome?(result) }
+        (n1 * n2).then { it if palindrome?(it) }
       end.max
     end.max
   end
@@ -25,19 +25,19 @@ class LargestPalindromeProduct
   end
 
   def palindrome?(number)
-    number.digits.then { |digits| digits == digits.reverse }
+    number.digits.then { it == it.reverse }
   end
 
   def upper_bound(digits)
     return 9 if digits == 1
 
-    calculate_bound(9, digits) { |n| (n * 10) + 9 }
+    calculate_bound(9, digits) { (it * 10) + 9 }
   end
 
   def lower_bound(digits)
     return 1 if digits == 1
 
-    calculate_bound(1, digits) { |n| n * 10 }
+    calculate_bound(1, digits) { it * 10 }
   end
 
   def calculate_bound(number, digits, &block)

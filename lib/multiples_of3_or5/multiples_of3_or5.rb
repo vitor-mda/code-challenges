@@ -9,7 +9,7 @@ class MultiplesOf3Or5
     private
 
     def multiples_below(ceiling)
-      (3...ceiling).filter { |n| multiple?(n) }
+      (3...ceiling).filter { multiple?(it) }
     end
 
     def multiple?(integer)
